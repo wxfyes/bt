@@ -116,7 +116,7 @@ start_menu(){
     echo
     read -p "请输入数字:" num
     case "$num" in
-    	1)
+    	        1)
 		vps_superspeed
 		;;
 		2)
