@@ -162,7 +162,7 @@ start_menu(){
 		12)
 		vps_bbr1
 		;;
-		13
+		13)
 		vps_bbr2
 		;;
 		0)
