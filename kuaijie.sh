@@ -69,8 +69,12 @@ vps_make-a(){
     wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
 }
 
-vps_wulabing(){
+vps_wulabing1(){
     wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
+}
+
+vps_wulabing2(){
+    wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/dev/install.sh" && chmod +x install.sh && bash install.sh
 }
 
 vps_bt1(){
@@ -113,7 +117,8 @@ start_menu(){
 	 blue " 5. VPS 回程线路测试 （假CN2线路，脚本无法测试）"
 	green "==========科学上网一键脚本==============================="
 	 blue " 6. xray8合1一键安装脚本 "
-	 blue " 7. wulabing一键安装脚本 "
+	 blue " 7. wulabing-v2ray一键安装脚本 "
+	 blue " 7. wulabing-xray一键安装脚本 "
 	green "==========宝塔面板官方脚本==============================="
 	 blue " 8. centos系统一键安装 "
 	 blue " 9. debian系统一键安装 "
@@ -146,24 +151,27 @@ start_menu(){
 		vps_make-a
 		;;
 		7)
-		vps_wulabing
+		vps_wulabing1
 		;;
 		8)
-		vps_bt1
+		vps_wulabing2
 		;;
 		9)
-		vps_bt2
+		vps_bt1
 		;;
 		10)
-		vps_bt3
+		vps_bt2
 		;;
 		11)
-		vps_bt4
+		vps_bt3
 		;;
 		12)
-		vps_bbr1
+		vps_bt4
 		;;
 		13)
+		vps_bbr1
+		;;
+		14)
 		vps_bbr2
 		;;
 		0)
