@@ -111,7 +111,7 @@ start_menu(){
 	 blue " 9. debian系统一键安装 "
 	 blue " 10. ubuntu系统一键安装 "
 	 green "=======宝塔面板破解，需先安装官方版再运行此脚本========="
-	 blue " 11. 宝塔破解企业版 一键破解
+	 blue " 11. 宝塔破解企业版 一键破解 "
      yellow " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
