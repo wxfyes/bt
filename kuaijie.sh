@@ -165,28 +165,28 @@ start_menu(){
 		vps_wulabing2
 		;;
 		9)
-		vps_bt1
+		vps_v2-ui
 		;;
 		10)
-		vps_bt2
+		vps_bt1
 		;;
 		11)
-		vps_bt3
+		vps_bt2
 		;;
 		12)
-		vps_bt4
+		vps_bt3
 		;;
 		13)
-		vps_bbr1
+		vps_bt4
 		;;
 		14)
-		vps_bbr2
+		vps_bbr1
 		;;
 		15)
-		vps_nf
+		vps_bbr2
 		;;
 		16)
-		vps_v2-ui
+		vps_nf
 		;;
 		0)
 		exit 0
