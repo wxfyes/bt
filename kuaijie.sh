@@ -132,7 +132,7 @@ start_menu(){
 	 blue " 13. BBR一键加速（稳定版）"
 	 blue " 14. BBR一键加速（最新版）"
 	green "===================解锁Netflix检测======================"
-	 blue " 15. 启动Netflix检测脚本"
+	 blue " 15. 启动Netflix检测脚本 "
         yellow " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
