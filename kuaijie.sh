@@ -102,7 +102,9 @@ vps_bbr2(){
 vps_nf(){
   yum install -y curl 2> /dev/null || apt install -y curl && bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/nf/main/nfcs.sh)
 }
-
+vps_v2-ui(){
+  bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -122,6 +124,7 @@ start_menu(){
 	 blue " 6. xray8合1一键安装脚本 "
 	 blue " 7. wulabing-v2ray一键安装脚本 "
 	 blue " 8. wulabing-xray一键安装脚本 "
+	 blue " 16. v2-ui面板一键安装 "
 	green "==========宝塔面板官方脚本==============================="
 	 blue " 9. centos系统一键安装 "
 	 blue " 10. debian系统一键安装 "
@@ -181,6 +184,9 @@ start_menu(){
 		;;
 		15)
 		vps_nf
+		;;
+		16)
+		vps_v2-ui
 		;;
 		0)
 		exit 0
