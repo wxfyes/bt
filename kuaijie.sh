@@ -99,6 +99,9 @@ vps_bbr1(){
 vps_bbr2(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
+vps_nf(){
+  yum install -y curl 2> /dev/null || apt install -y curl && bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/nf/main/nfcs.sh)
+}
 
 start_menu(){
     clear
@@ -128,6 +131,8 @@ start_menu(){
 	green "===================BBR加速=============================="
 	 blue " 13. BBR一键加速（稳定版）"
 	 blue " 14. BBR一键加速（最新版）"
+	green "===================解锁Netflix检测======================"
+	 blue " 15. 启动Netflix检测脚本
     yellow " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -173,6 +178,9 @@ start_menu(){
 		;;
 		14)
 		vps_bbr2
+		;;
+		15)
+		vps_nf
 		;;
 		0)
 		exit 0
