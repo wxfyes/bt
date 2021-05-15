@@ -108,10 +108,11 @@ vps_v2-ui(){
 start_menu(){
     clear
 	green "=========================================================="
-     blue " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
-	 blue " 网站：https://wxf2088.xyz "
-	 blue " YouTube频道：王晓峰"
-     blue " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
+     yellowyellow " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
+	 yellow " 网站：https://wxf2088.xyz "
+	 yellow " YouTube频道：王晓峰"
+	 yellow " TG频道：https://t.me/buluoge "
+     yellow " 此脚本源于网络，仅仅只是汇聚脚本功能，方便大家使用而已！"
 	green "=========================================================="
       red " 脚本测速会大量消耗 VPS 流量，请悉知！"
     green "==========VPS测速========================================="
