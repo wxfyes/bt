@@ -54,7 +54,7 @@ vps_zbench(){
 }
 
 vps_testrace(){
-	wget -N --no-check-certificate https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh && bash testrace.sh
+	wget -O huichong.sh https://raw.githubusercontent.com/wxfyes/bt/master/huichong.sh && bash huichong.sh
 }
 
 vps_LemonBenchIntl(){
