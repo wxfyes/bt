@@ -108,7 +108,7 @@ vps_v2-ui(){
 start_menu(){
     clear
 	green "=========================================================="
-     yellowyellow " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
+         yellow " 本脚本支持：CentOS7+ / Debian9+ / Ubuntu16.04+"
 	 yellow " 网站：https://wxf2088.xyz "
 	 yellow " YouTube频道：王晓峰"
 	 yellow " TG频道：https://t.me/buluoge "
