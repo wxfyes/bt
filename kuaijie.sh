@@ -62,7 +62,7 @@ vps_LemonBenchIntl(){
 }
 
 vps_Cn2GIA(){
-    wget -N --no-check-certificate https://raw.githubusercontent.com/wangn9900/testvps/master/return.sh && bash return.sh
+    wget -O huichong.sh https://raw.githubusercontent.com/wxfyes/bt/master/huichong.sh && bash huichong.sh
 }
 
 vps_make-a(){
