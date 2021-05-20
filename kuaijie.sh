@@ -106,7 +106,7 @@ vps_v2-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
 }
 vps_root(){
-  bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
+  bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
 }
 start_menu(){
     clear
