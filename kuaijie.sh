@@ -108,6 +108,9 @@ vps_v2-ui(){
 vps_root(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
 }
+vps_trojan(){
+  wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -129,19 +132,20 @@ start_menu(){
 	 blue " 7. wulabing-v2ray一键安装脚本 "
 	 blue " 8. wulabing-xray一键安装脚本 "
 	 blue " 9. v2-ui面板一键安装 "
+	 blue " 10. Trojan一键安装（atrandys版）"
 	green "===================宝塔面板官方脚本======================="
-	 blue " 10. centos系统一键安装 "
-	 blue " 11. debian系统一键安装 "
-	 blue " 12. ubuntu系统一键安装 "
+	 blue " 11. centos系统一键安装 "
+	 blue " 12. debian系统一键安装 "
+	 blue " 13. ubuntu系统一键安装 "
 	green "========宝塔面板破解，需先安装官方版再运行此脚本============"
-	 blue " 13. 宝塔破解企业版 一键破解 "
+	 blue " 14. 宝塔破解企业版 一键破解 "
 	green "===================BBR加速==============================="
-	 blue " 14. BBR一键加速（稳定版）"
-	 blue " 15. BBR一键加速（最新版）"
+	 blue " 15. BBR一键加速（稳定版）"
+	 blue " 16. BBR一键加速（最新版）"
 	green "====================解锁Netflix检测======================="
-	 blue " 16. 启动Netflix检测脚本 "
+	 blue " 17. 启动Netflix检测脚本 "
 	green "===== ====甲骨文Root密码一键脚本（KVM架构VPS通用）=========="
-	 blue " 17. 一键设置root密码 "
+	 blue " 18. 一键设置root密码 "
         yellow " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -174,27 +178,30 @@ start_menu(){
 		vps_v2-ui
 		;;
 		10)
-		vps_bt1
+		vps_trojan
 		;;
 		11)
-		vps_bt2
+		vps_bt1
 		;;
 		12)
-		vps_bt3
+		vps_bt2
 		;;
 		13)
-		vps_bt4
+		vps_bt3
 		;;
 		14)
-		vps_bbr1
+		vps_bt4
 		;;
 		15)
-		vps_bbr2
+		vps_bbr1
 		;;
 		16)
-		vps_nf
+		vps_bbr2
 		;;
 		17)
+		vps_nf
+		;;
+		18)
 		vps_root
 		;;
 		0)
