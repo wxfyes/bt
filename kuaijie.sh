@@ -111,6 +111,9 @@ vps_root(){
 vps_trojan(){
   wget https://raw.githubusercontent.com/wxfyes/trojan/master/Trojan.sh && bash Trojan.sh
 }
+vps_frps(){
+  wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh && chmod 700 ./install-frps.sh && ./install-frps.sh install
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -144,8 +147,9 @@ start_menu(){
 	 yellow " 16. BBR一键加速（最新版）"
 	green "====================解锁Netflix检测======================="
 	 yellow " 17. 启动Netflix检测脚本 "
-	green "===== ====甲骨文Root密码一键脚本（KVM架构VPS通用）=========="
-	 yellow " 18. 一键设置root密码 "
+	green "===== ====其他工具（KVM架构VPS通用）=========="
+	 yellow " 18. 甲骨文一键设置root密码 "
+	 yellow " 19. frps内网穿透一键安装
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -203,6 +207,9 @@ start_menu(){
 		;;
 		18)
 		vps_root
+		;;
+		19）
+	        vps_frps
 		;;
 		0)
 		exit 0
