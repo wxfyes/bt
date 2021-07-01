@@ -208,7 +208,7 @@ start_menu(){
 		18)
 		vps_root
 		;;
-		19）
+		19)
 	        vps_frps
 		;;
 		0)
