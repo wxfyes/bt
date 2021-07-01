@@ -149,7 +149,7 @@ start_menu(){
 	 yellow " 17. 启动Netflix检测脚本 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 18. 甲骨文一键设置root密码 "
-	 yellow " 19. frps内网穿透一键安装
+	 yellow " 19. frps内网穿透一键安装 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
