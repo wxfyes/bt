@@ -117,6 +117,9 @@ vps_frps(){
 vps_nps(){
   yum -y install wget && wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz && tar -zxvf linux_amd64_server.tar.gz && sudo ./nps install && ./nps start
 }
+vps_warp(){
+  bash <(curl -fsSL git.io/warp.sh) menu
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -154,6 +157,7 @@ start_menu(){
 	 yellow " 18. 甲骨文一键设置root密码 "
 	 yellow " 19. frp内网穿透一键安装 "
 	 yellow " 20. NPS内网穿透一键安装 "
+	 yellow " 21. Cloudflare WARP 一键配置脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -217,6 +221,9 @@ start_menu(){
 		;;
 		20)
 		vps_nps
+		;;
+		21)
+		vps_warp
 		;;
 		0)
 		exit 0
