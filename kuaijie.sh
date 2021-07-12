@@ -114,6 +114,9 @@ vps_trojan(){
 vps_frps(){
   wget https://raw.githubusercontent.com/MvsCode/frps-onekey/master/install-frps.sh -O ./install-frps.sh && chmod 700 ./install-frps.sh && ./install-frps.sh install
 }
+vps_nps(){
+  yum -y install wget && wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz && tar -zxvf linux_amd64_server.tar.gz && sudo ./nps install && ./nps start
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -149,7 +152,8 @@ start_menu(){
 	 yellow " 17. 启动Netflix检测脚本 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
 	 yellow " 18. 甲骨文一键设置root密码 "
-	 yellow " 19. frps内网穿透一键安装 "
+	 yellow " 19. frp内网穿透一键安装 "
+	 yellow " 20. NPS内网穿透一键安装 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -210,6 +214,9 @@ start_menu(){
 		;;
 		19)
 	        vps_frps
+		;;
+		20)
+		vps_nps
 		;;
 		0)
 		exit 0
