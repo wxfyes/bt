@@ -126,6 +126,10 @@ vps_gost(){
 vps_ehco(){
   bash <(curl -fsSL https://git.io/ehco.sh)
 }
+}
+vps_ip(){
+  curl ip.p3terx.com
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -166,6 +170,7 @@ start_menu(){
 	 yellow " 21. Cloudflare WARP 一键配置脚本 "
 	 yellow " 22. gost隧道一键中转 "
 	 yellow " 23. Ehco隧道一键中转 "
+	 yellow " 24. 查看本机IP "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -238,6 +243,9 @@ start_menu(){
 		;;
 		23)
 		vps_ehco
+		;;
+		24)
+		vps_ip
 		;;
 		0)
 		exit 0
