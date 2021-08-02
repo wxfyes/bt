@@ -46,7 +46,7 @@ fi
 $systemPackage -y install wget curl
 
 vps_superspeed(){
-	bash <(curl -Lso- https://git.io/superspeed)
+	wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash
 }
 
 vps_zbench(){
