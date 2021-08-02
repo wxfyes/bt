@@ -100,7 +100,7 @@ vps_bbr2(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 vps_nf(){
-  yum install -y curl jq 2> /dev/null || apt install -y curl jq && bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/nf/main/nfcs.sh)
+  wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 }
 vps_v2-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
