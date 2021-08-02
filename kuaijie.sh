@@ -165,7 +165,7 @@ start_menu(){
 	 yellow " 20. NPS内网穿透一键安装 "
 	 yellow " 21. Cloudflare WARP 一键配置脚本 "
 	 yellow " 22. gost隧道一键中转 "
-	 yellow " 23. Ehco隧道一键中转 “
+	 yellow " 23. Ehco隧道一键中转 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
