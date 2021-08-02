@@ -126,7 +126,6 @@ vps_gost(){
 vps_ehco(){
   bash <(curl -fsSL https://git.io/ehco.sh)
 }
-}
 vps_ip(){
   curl ip.p3terx.com
 }
