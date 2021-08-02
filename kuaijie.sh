@@ -120,6 +120,12 @@ vps_nps(){
 vps_warp(){
   bash <(curl -fsSL git.io/warp.sh) menu
 }
+vps_gost(){
+  wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
+}
+vps_ehco(){
+  bash <(curl -fsSL https://git.io/ehco.sh)
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -158,6 +164,8 @@ start_menu(){
 	 yellow " 19. frp内网穿透一键安装 "
 	 yellow " 20. NPS内网穿透一键安装 "
 	 yellow " 21. Cloudflare WARP 一键配置脚本 "
+	 yellow " 22. gost隧道一键中转 "
+	 yellow " 23. Ehco隧道一键中转 “
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -224,6 +232,12 @@ start_menu(){
 		;;
 		21)
 		vps_warp
+		;;
+		22)
+		vps_gost
+		;;
+		23)
+		vps_ehco
 		;;
 		0)
 		exit 0
