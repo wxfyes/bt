@@ -90,7 +90,7 @@ vps_bt3(){
 }
 
 vps_bt4(){
-   wget -O /home/update7.sh http://www.hostcli.com/install/update7.sh && bash /home/update7.sh
+   curl http://v7.hostcli.com/install/update6.sh|bash
 }
 vps_bbr1(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
