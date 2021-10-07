@@ -129,6 +129,9 @@ vps_ehco(){
 vps_ip(){
   curl ip.p3terx.com
 }
+vps_openvz(){
+  wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -160,16 +163,17 @@ start_menu(){
 	green "===================BBR加速==============================="
 	 yellow " 15. BBR一键加速（稳定版）"
 	 yellow " 16. BBR一键加速（最新版）"
+	 yellow " 17. openvz BBR一键加速 "
 	green "====================解锁Netflix检测======================="
-	 yellow " 17. 启动Netflix检测脚本 "
+	 yellow " 18. 启动Netflix检测脚本 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
-	 yellow " 18. 甲骨文一键设置root密码 "
-	 yellow " 19. frp内网穿透一键安装 "
-	 yellow " 20. NPS内网穿透一键安装 "
-	 yellow " 21. Cloudflare WARP 一键配置脚本 "
-	 yellow " 22. gost隧道一键中转 "
-	 yellow " 23. Ehco隧道一键中转 "
-	 yellow " 24. 查看本机IP "
+	 yellow " 19. 甲骨文一键设置root密码 "
+	 yellow " 20. frp内网穿透一键安装 "
+	 yellow " 21. NPS内网穿透一键安装 "
+	 yellow " 22. Cloudflare WARP 一键配置脚本 "
+	 yellow " 23. gost隧道一键中转 "
+	 yellow " 24. Ehco隧道一键中转 "
+	 yellow " 25. 查看本机IP "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -223,27 +227,30 @@ start_menu(){
 		vps_bbr2
 		;;
 		17)
-		vps_nf
+		vps_openvz
 		;;
 		18)
-		vps_root
+		vps_nf
 		;;
 		19)
-	        vps_frps
+	        vps_root
 		;;
 		20)
-		vps_nps
+		vps_frps
 		;;
 		21)
-		vps_warp
+		vps_mps
 		;;
 		22)
-		vps_gost
+		vps_warp
 		;;
 		23)
-		vps_ehco
+		vps_gost
 		;;
 		24)
+		vps_ehco
+		;;
+		25)
 		vps_ip
 		;;
 		0)
