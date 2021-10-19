@@ -239,7 +239,7 @@ start_menu(){
 		vps_frps
 		;;
 		21)
-		vps_mps
+		vps_nps
 		;;
 		22)
 		vps_warp
