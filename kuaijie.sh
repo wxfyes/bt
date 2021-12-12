@@ -239,7 +239,7 @@ start_menu(){
 		19)
 		vps_nf1
 		;;
-		20
+		20)
 	        vps_root
 		;;
 		21)
