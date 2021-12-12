@@ -102,6 +102,9 @@ vps_bbr2(){
 vps_nf(){
   wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 }
+vps_nf1){
+  bash <(curl -L -s https://raw.githubusercontent.com/wxfyes/nf/main/check.sh)
+}
 vps_v2-ui(){
   bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
 }
@@ -166,14 +169,15 @@ start_menu(){
 	 yellow " 17. openvz BBR一键加速 "
 	green "====================解锁Netflix检测======================="
 	 yellow " 18. 启动Netflix检测脚本 "
+	 yellow " 19. 流媒体一键检测脚本 "
 	green "===== ====其他工具（KVM架构VPS通用）=========="
-	 yellow " 19. 甲骨文一键设置root密码 "
-	 yellow " 20. frp内网穿透一键安装 "
-	 yellow " 21. NPS内网穿透一键安装 "
-	 yellow " 22. Cloudflare WARP 一键配置脚本 "
-	 yellow " 23. gost隧道一键中转 "
-	 yellow " 24. Ehco隧道一键中转 "
-	 yellow " 25. 查看本机IP "
+	 yellow " 20 甲骨文一键设置root密码 "
+	 yellow " 21. frp内网穿透一键安装 "
+	 yellow " 22. NPS内网穿透一键安装 "
+	 yellow " 23. Cloudflare WARP 一键配置脚本 "
+	 yellow " 24. gost隧道一键中转 "
+	 yellow " 25. Ehco隧道一键中转 "
+	 yellow " 26. 查看本机IP "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -233,24 +237,27 @@ start_menu(){
 		vps_nf
 		;;
 		19)
+		vps_nf1
+		;;
+		20
 	        vps_root
 		;;
-		20)
+		21)
 		vps_frps
 		;;
-		21)
+		22)
 		vps_nps
 		;;
-		22)
+		23)
 		vps_warp
 		;;
-		23)
+		24)
 		vps_gost
 		;;
-		24)
+		25)
 		vps_ehco
 		;;
-		25)
+		26)
 		vps_ip
 		;;
 		0)
