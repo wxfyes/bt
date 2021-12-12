@@ -102,7 +102,7 @@ vps_bbr2(){
 vps_nf(){
   wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf
 }
-vps_nf1){
+vps_nf1(){
   bash <(curl -L -s https://raw.githubusercontent.com/wxfyes/nf/main/check.sh)
 }
 vps_v2-ui(){
