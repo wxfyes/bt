@@ -135,6 +135,9 @@ vps_ip(){
 vps_openvz(){
   wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
+vps_warp1(){
+  wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -174,10 +177,11 @@ start_menu(){
 	 yellow " 20 甲骨文一键设置root密码 "
 	 yellow " 21. frp内网穿透一键安装 "
 	 yellow " 22. NPS内网穿透一键安装 "
-	 yellow " 23. Cloudflare WARP 一键配置脚本 "
+	 yellow " 23. P3terx版 WARP 一键配置脚本 "
 	 yellow " 24. gost隧道一键中转 "
 	 yellow " 25. Ehco隧道一键中转 "
 	 yellow " 26. 查看本机IP "
+	 yellow " 27. fscarmen版 warp奈飞解锁脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -259,6 +263,9 @@ start_menu(){
 		;;
 		26)
 		vps_ip
+		;;
+		27)
+		vps_warp1
 		;;
 		0)
 		exit 0
