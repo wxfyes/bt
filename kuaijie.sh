@@ -142,7 +142,7 @@ vps_jg(){
    bash <(curl -fsSL https://raw.githubusercontent.com/wxfyes/bt/master/installjg.sh)
 }
 vps_xd(){
-   bash <(wget --no-check-certificate -qO- 'https://sh.xdmb.xyz/xiandan/xd.sh')+
+   bash <(wget --no-check-certificate -qO- 'https://sh.xdmb.xyz/xiandan/xd.sh')
 }  
 start_menu(){
     clear
