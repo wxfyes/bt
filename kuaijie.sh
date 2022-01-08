@@ -138,6 +138,12 @@ vps_openvz(){
 vps_warp1(){
   wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh && bash menu.sh
 }
+vps_jg(){
+   bash <(curl -fsSL https://raw.githubusercontent.com/wxfyes/bt/master/installjg.sh)
+}
+vps_xd(){
+   bash <(wget --no-check-certificate -qO- 'https://sh.xdmb.xyz/xiandan/xd.sh')+
+}  
 start_menu(){
     clear
 	green "=========================================================="
@@ -182,6 +188,8 @@ start_menu(){
 	 yellow " 25. Ehco隧道一键中转 "
 	 yellow " 26. 查看本机IP "
 	 yellow " 27. fscarmen版 warp奈飞解锁脚本 "
+	 yellow " 28. 极光转发面板 "
+	 yellow " 29. 咸蛋转发面板 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -266,6 +274,12 @@ start_menu(){
 		;;
 		27)
 		vps_warp1
+		;;
+		28)
+		vps_jg
+		;;
+		29)
+		vps_xd
 		;;
 		0)
 		exit 0
