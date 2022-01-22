@@ -144,6 +144,9 @@ vps_jg(){
 vps_xd(){
    bash <(wget --no-check-certificate -qO- 'https://sh.xdmb.xyz/xiandan/xd.sh')
 }  
+vps_nezha(){
+   curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh  -o nezha.sh && chmod +x nezha.sh && bash nezha.sh
+} 
 start_menu(){
     clear
 	green "=========================================================="
@@ -190,6 +193,7 @@ start_menu(){
 	 yellow " 27. fscarmen版 warp奈飞解锁脚本 "
 	 yellow " 28. 极光转发面板 "
 	 yellow " 29. 咸蛋转发面板 "
+	 yellow " 30. 哪吒监控探针 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -280,6 +284,9 @@ start_menu(){
 		;;
 		29)
 		vps_xd
+		;;
+		30)
+		vps_nezha
 		;;
 		0)
 		exit 0
