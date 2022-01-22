@@ -106,7 +106,7 @@ vps_nf1(){
   bash <(curl -L -s https://raw.githubusercontent.com/wxfyes/nf/main/check.sh)
 }
 vps_v2-ui(){
-  bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/nf/main/v2-ui.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 }
 vps_root(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
@@ -164,7 +164,7 @@ start_menu(){
 	 yellow " 6. xray8合1一键安装脚本 "
 	 yellow " 7. wulabing-v2ray一键安装脚本 "
 	 yellow " 8. wulabing-xray一键安装脚本 "
-	 yellow " 9. v2-ui面板一键安装 "
+	 yellow " 9. X-ui面板一键安装 "
 	 yellow " 10. Trojan一键安装（atrandys版）"
 	green "===================宝塔面板官方脚本======================="
 	 yellow " 11. centos系统一键安装 "
