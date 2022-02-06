@@ -127,7 +127,8 @@ vps_gost(){
   wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh && chmod +x gost.sh && ./gost.sh
 }
 vps_ehco(){
-  bash <(curl -fsSL https://git.io/ehco.sh)
+  wget -N --no-check-certificate https://github.com/Ehco1996/ehco/releases/download/v0.1.4/ehco_0.1.4_Linux_amd64.tar.gz && tar -zxf ehco_0.1.4_Linux_amd64.tar.gz && chmod +x ehco
+
 }
 vps_ip(){
   curl ip.p3terx.com
