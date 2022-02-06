@@ -128,7 +128,6 @@ vps_gost(){
 }
 vps_ehco(){
   wget -N --no-check-certificate https://github.com/Ehco1996/ehco/releases/download/v0.1.4/ehco_0.1.4_Linux_amd64.tar.gz && tar -zxf ehco_0.1.4_Linux_amd64.tar.gz && chmod +x ehco
-
 }
 vps_ip(){
   curl ip.p3terx.com
