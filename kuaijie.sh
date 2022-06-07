@@ -146,7 +146,10 @@ vps_xd(){
 }  
 vps_nezha(){
    curl -L https://raw.githubusercontent.com/naiba/nezha/master/script/install.sh  -o nezha.sh && chmod +x nezha.sh && bash nezha.sh
-} 
+}
+vps_jsnf(){
+   wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -f
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -194,11 +197,12 @@ start_menu(){
 	 yellow " 28. 极光转发面板 "
 	 yellow " 29. 咸蛋转发面板 "
 	 yellow " 30. 哪吒监控探针 "
+	 yellow " 31. DNS解锁奈飞 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
     case "$num" in
-    	1)
+    	        1)
 		vps_superspeed
 		;;
 		2)
@@ -287,6 +291,9 @@ start_menu(){
 		;;
 		30)
 		vps_nezha
+		;;
+		31)
+		vps_jsnf
 		;;
 		0)
 		exit 0
