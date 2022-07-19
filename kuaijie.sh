@@ -136,7 +136,7 @@ vps_openvz(){
   wget --no-cache -O lkl-haproxy.sh https://github.com/mzz2017/lkl-haproxy/raw/master/lkl-haproxy.sh && bash lkl-haproxy.sh
 }
 vps_warp1(){
-  wget -N https://cdn.jsdelivr.net/gh/fscarmen/warp/menu.sh && bash menu.sh
+  bash <(curl -sSL https://raw.githubusercontent.com/fscarmen/warp_unlock/main/unlock.sh)
 }
 vps_jg(){
    bash <(curl -fsSL https://raw.githubusercontent.com/wxfyes/bt/master/installjg.sh)
