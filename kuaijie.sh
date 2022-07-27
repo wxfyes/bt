@@ -153,6 +153,9 @@ vps_jsnf(){
 vps_cdn(){
    wget https://raw.githubusercontent.com/Har-Kuun/OneClickCDN/master/translation/translated_scripts/OneClickCDN_zh-CN.sh && sudo bash OneClickCDN_zh-CN.sh
 }
+vps_tcp(){
+   wget https://raw.githubusercontent.com/wxfyes/bt/master/tools.sh
+}   
 start_menu(){
     clear
 	green "=========================================================="
@@ -202,6 +205,7 @@ start_menu(){
 	 yellow " 30. 哪吒监控探针 "
 	 yellow " 31. DNS解锁奈飞 "
 	 yellow " 32. 一键CDN搭建脚本 "
+	 yellow " 33. NeKo 一键系统优化 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -301,6 +305,9 @@ start_menu(){
 		;;
 		32)
 		vps_cdn
+		;;
+		33)
+		vps_tcp
 		;;
 		0)
 		exit 0
