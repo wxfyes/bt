@@ -154,7 +154,7 @@ vps_cdn(){
    wget https://raw.githubusercontent.com/Har-Kuun/OneClickCDN/master/translation/translated_scripts/OneClickCDN_zh-CN.sh && sudo bash OneClickCDN_zh-CN.sh
 }
 vps_tcp(){
-   wget https://raw.githubusercontent.com/wxfyes/bt/master/tools.sh
+   wget https://raw.githubusercontent.com/wxfyes/bt/master/tools.sh && bash tools.sh
 }   
 start_menu(){
     clear
