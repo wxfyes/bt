@@ -209,7 +209,7 @@ start_menu(){
 	 yellow " 31. DNS解锁奈飞 "
 	 yellow " 32. 一键CDN搭建脚本 "
 	 yellow " 33. NeKo 一键系统优化 "
-	 yellow " 34. XrayR一键脚本
+	 yellow " 34. XrayR一键脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
