@@ -155,7 +155,10 @@ vps_cdn(){
 }
 vps_tcp(){
    wget https://raw.githubusercontent.com/wxfyes/bt/master/tools.sh && bash tools.sh
-}   
+}
+vps_xrayr(){
+   bash <(curl -Ls https://raw.githubusercontent.com/wangn9900/XrayR-release/master/install.sh)
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -206,6 +209,7 @@ start_menu(){
 	 yellow " 31. DNS解锁奈飞 "
 	 yellow " 32. 一键CDN搭建脚本 "
 	 yellow " 33. NeKo 一键系统优化 "
+	 yellow " 34. XrayR一键脚本
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -308,6 +312,9 @@ start_menu(){
 		;;
 		33)
 		vps_tcp
+		;;
+		34）
+		vps_xrayr
 		;;
 		0)
 		exit 0
