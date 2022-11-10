@@ -313,7 +313,7 @@ start_menu(){
 		33)
 		vps_tcp
 		;;
-		34）
+		34)
 		vps_xrayr
 		;;
 		0)
