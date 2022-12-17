@@ -159,6 +159,9 @@ vps_tcp(){
 vps_xrayr(){
    bash <(curl -Ls https://raw.githubusercontent.com/wangn9900/XrayR-release/master/install.sh)
 }
+vps_ddsystem(){
+   wget --no-check-certificate -O AutoReinstall.sh https://raw.githubusercontent.com/wxfyes/bt/master/AutoReinstall.sh && chmod a+x AutoReinstall.sh && bash AutoReinstall.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -210,6 +213,7 @@ start_menu(){
 	 yellow " 32. 一键CDN搭建脚本 "
 	 yellow " 33. NeKo 一键系统优化 "
 	 yellow " 34. XrayR一键脚本 "
+	 yellow " 35. 一键DD系统 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -315,6 +319,9 @@ start_menu(){
 		;;
 		34)
 		vps_xrayr
+		;;
+		35)
+		vps_ddsystem
 		;;
 		0)
 		exit 0
