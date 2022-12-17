@@ -8,16 +8,20 @@ fi
 
 function CopyRight() {
   clear
-  echo "########################################################"
-  echo "#                                                      #"
-  echo "#  Auto Reinstall Script                               #"
-  echo "#                                                      #"
-  echo "#  Author: hiCasper & Minijer                          #"
-  echo "#  Last Modified: 2021-09-09                           #"
-  echo "#                                                      #"
-  echo "#  Supported by MoeClub & cxthhhhh                     #"
-  echo "#                                                      #"
-  echo "########################################################"
+  echo "###################################################################################"
+  echo "#                                                                                 #"
+  echo "#  Auto Reinstall Script                                                          #"
+  echo "#                                                                                 #"
+  echo "#  Author: hiCasper & Minijer                                                     #"
+  echo "#  Last Modified: 2021-09-09                                                      #"
+  echo "#                                                                                 #"
+  echo "#  Supported by MoeClub & cxthhhhh                                                #"
+  echo "#  安装需必备的组件(手动复制安装完，再回来继续运行此脚本)                           #"   
+  echo "#   Debian/Ubuntu:                                                                #"
+  echo "#    apt-get install -y xz-utils openssl gawk file wget screen && screen -S os    #"
+  echo "#   RedHat/CentOS:                                                                #"
+  echo "#    yum install -y xz openssl gawk file glibc-common wget screen && screen -S os #"
+  echo "###################################################################################"
   echo -e "\n"
 }
 
