@@ -78,24 +78,20 @@ vps_wulabing2(){
 }
 
 vps_bt1(){
-   yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+   yum install -y wget && wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh && sh install.sh
 }
-
 vps_bt2(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
+   wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh && bash install.sh
 }
-
 vps_bt3(){
-   wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+   wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh && sudo bash install.sh
 }
-
 vps_bt4(){
    curl http://v7.hostcli.com/install/update6.sh|bash
 }
 vps_bbr1(){
    wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
-
 vps_bbr2(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
@@ -184,12 +180,12 @@ start_menu(){
 	 yellow " 8. wulabing-xray一键安装脚本 "
 	 yellow " 9. X-ui面板一键安装 "
 	 yellow " 10. Trojan一键安装（atrandys版）"
-	green "===================宝塔面板官方脚本======================="
+	green "===================宝塔面板企业破解版======================="
 	 yellow " 11. centos系统一键安装 "
 	 yellow " 12. debian系统一键安装 "
 	 yellow " 13. ubuntu系统一键安装 "
 	green "========宝塔面板破解，需先安装官方版再运行此脚本============"
-	 yellow " 14. 宝塔破解企业版 一键破解 "
+	 yellow " 14. 宝塔破解企业版 一键破解(原版官方宝塔用此脚本)"
 	green "===================BBR加速==============================="
 	 yellow " 15. BBR一键加速（稳定版）"
 	 yellow " 16. BBR一键加速（最新版）"
