@@ -102,7 +102,7 @@ vps_nf1(){
   bash <(curl -L -s https://raw.githubusercontent.com/wxfyes/nf/main/check.sh)
 }
 vps_v2-ui(){
-  bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 }
 vps_root(){
   bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/Oracle/main/root.sh)
