@@ -78,7 +78,7 @@ vps_wulabing2(){
 }
 
 vps_bt1(){
-   yum install -y wget && wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh && sh install.sh
+   wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh
 }
 vps_bt2(){
    if [ -f /usr/bin/curl ];then curl -sSO https://download.bt.cn/install/install_panel.sh;else wget -O install_panel.sh https://download.bt.cn/install/install_panel.sh;fi;bash install_panel.sh ed8484bec
@@ -158,6 +158,9 @@ vps_xrayr(){
 vps_ddsystem(){
    wget --no-check-certificate -O AutoReinstall.sh https://raw.githubusercontent.com/wxfyes/bt/master/AutoReinstall.sh && chmod a+x AutoReinstall.sh && bash AutoReinstall.sh
 }
+vps_btgz(){
+   wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh && bash auto_disk.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -181,7 +184,7 @@ start_menu(){
 	 yellow " 9. X-ui面板一键安装 "
 	 yellow " 10. Trojan一键安装（atrandys版）"
 	green "===================宝塔面板企业破解版======================="
-	 yellow " 11. 开心版一键安装（不推荐） "
+	 yellow " 11. 宝塔国际版 "
 	 yellow " 12. 官方最新原版一键安装 "
 	 yellow " 13. 宝塔7.7系统一键安装（装完按14破解去验证） "
 	green "========宝塔面板破解，需先安装官方版再运行此脚本============"
@@ -210,6 +213,7 @@ start_menu(){
 	 yellow " 33. NeKo 一键系统优化 "
 	 yellow " 34. XrayR一键脚本 "
 	 yellow " 35. 一键DD系统 "
+         yellow " 36. 宝塔硬盘一键挂载 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -319,6 +323,9 @@ start_menu(){
 		35)
 		vps_ddsystem
 		;;
+                36)
+		vps_btgz
+                ;;
 		0)
 		exit 0
 		;;
