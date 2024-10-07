@@ -96,7 +96,7 @@ vps_bbr2(){
   wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 vps_nf(){
-  bash <(curl -sSL https://raw.githubusercontent.com/wxfyes/nf/main/nf.sh)
+  bash <(curl -L -s check.unlock.media)
 }
 vps_nf1(){
   bash <(curl -L -s https://raw.githubusercontent.com/wxfyes/nf/main/check.sh)
