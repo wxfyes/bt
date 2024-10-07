@@ -158,6 +158,9 @@ vps_xrayr(){
 vps_ddsystem(){
    wget --no-check-certificate -O AutoReinstall.sh https://raw.githubusercontent.com/wxfyes/bt/master/AutoReinstall.sh && chmod a+x AutoReinstall.sh && bash AutoReinstall.sh
 }
+v2bx(){
+   wget -N https://raw.githubusercontent.com/wyx2685/V2bX-script/master/install.sh && bash install.sh
+}
 vps_btgz(){
    wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh && bash auto_disk.sh
 }
@@ -214,6 +217,7 @@ start_menu(){
 	 yellow " 34. XrayR一键脚本 "
 	 yellow " 35. 一键DD系统 "
          yellow " 36. 宝塔硬盘一键挂载 "
+	 yellow " 37. V2BX一键脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -325,6 +329,9 @@ start_menu(){
 		;;
                 36)
 		vps_btgz
+                ;;
+                37)
+		v2bx
                 ;;
 		0)
 		exit 0
