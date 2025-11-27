@@ -337,7 +337,7 @@ start_menu(){
         37)
 		v2bx
         ;;
-		38）
+		38)
 		vps_ipssl
 		;;
 		0)
