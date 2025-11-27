@@ -153,7 +153,7 @@ vps_tcp(){
    wget https://raw.githubusercontent.com/wxfyes/bt/master/tools.sh && bash tools.sh
 }
 vps_xrayr(){
-   bash <(curl -Ls https://raw.githubusercontent.com/wangn9900/XrayR-release/master/install.sh)
+   bash <(curl -Ls https://raw.githubusercontent.com/wxfyes/XrayR-release/refs/heads/master/install.sh)
 }
 vps_ddsystem(){
    wget --no-check-certificate -O AutoReinstall.sh https://raw.githubusercontent.com/wxfyes/bt/master/AutoReinstall.sh && chmod a+x AutoReinstall.sh && bash AutoReinstall.sh
