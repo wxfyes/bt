@@ -164,6 +164,9 @@ v2bx(){
 vps_btgz(){
    wget -O auto_disk.sh http://download.bt.cn/tools/auto_disk.sh && bash auto_disk.sh
 }
+vps_ipssl(){
+   wget https://raw.githubusercontent.com/wxfyes/bt/refs/heads/master/proxy_ip_ssl.sh && bash proxy_ip_ssl.sh
+}
 start_menu(){
     clear
 	green "=========================================================="
@@ -216,8 +219,9 @@ start_menu(){
 	 yellow " 33. NeKo 一键系统优化 "
 	 yellow " 34. XrayR一键脚本 "
 	 yellow " 35. 一键DD系统 "
-         yellow " 36. 宝塔硬盘一键挂载 "
+     yellow " 36. 宝塔硬盘一键挂载 "
 	 yellow " 37. V2BX一键脚本 "
+	 yellow " 38. 一键反代网站IP格式SSL证书自动续期脚本 "
         red " 0. 退出脚本 "
     echo
     read -p "请输入数字:" num
@@ -327,12 +331,15 @@ start_menu(){
 		35)
 		vps_ddsystem
 		;;
-                36)
+        36)
 		vps_btgz
-                ;;
-                37)
+        ;;
+        37)
 		v2bx
-                ;;
+        ;;
+		38）
+		vps_ipssl
+		;;
 		0)
 		exit 0
 		;;
